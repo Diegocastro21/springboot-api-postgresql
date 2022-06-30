@@ -12,7 +12,6 @@ import java.time.Month;
 import java.util.List;
 
 @SpringBootApplication
-@RestController
 public class SpringbootPostgresqlApplication {
 
 	public static void main(String[] args) {
@@ -20,13 +19,6 @@ public class SpringbootPostgresqlApplication {
 	}
 
 
-	@GetMapping
-	public List<Student> hello(){
-		return List.of(new Student(1L,
-				"Marta",
-				"marta.des@gmail.com",
-				LocalDate.of(2000, Month.FEBRUARY, 8),
-				21));
-	}
+
 
 }
