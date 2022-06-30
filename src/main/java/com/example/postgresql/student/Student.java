@@ -8,13 +8,12 @@ public class Student {
     private Long id;
     private String name;
     private String email;
-    private LocalDateTime dob;
+    private LocalDate dob;
     private Integer age;
 
-    public Student(long id, String marta, String email, LocalDate of, int age) {
-    }
 
-    public Student(Long id, String name, String email, LocalDateTime dob, Integer age) {
+
+    public Student(Long id, String name, String email, LocalDate dob, Integer age) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -22,7 +21,7 @@ public class Student {
         this.age = age;
     }
 
-    public Student(String name, String email, LocalDateTime dob, Integer age) {
+    public Student(String name, String email, LocalDate dob, Integer age) {
         this.name = name;
         this.email = email;
         this.dob = dob;
@@ -53,11 +52,11 @@ public class Student {
         this.email = email;
     }
 
-    public LocalDateTime getDob() {
+    public LocalDate getDob() {
         return dob;
     }
 
-    public void setDob(LocalDateTime dob) {
+    public void setDob(LocalDate dob) {
         this.dob = dob;
     }
 
